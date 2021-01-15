@@ -18,16 +18,12 @@ p {
 body {
   background: #f2f2f2; }
 
-@media (max-width: 768px) {
-  table.table tr thead {
-    display: none; }
-  table.table tr td {
-    display: block;
-    width: 100%; }
-    table.table tr td:before {
-      content: 'attr(data-label)';
-      display: block;
-      position: relative; } }
+html, body {
+  height: 100%;
+  position: relative; }
+
+main {
+  padding-bottom: 20px; }
 
 header {
   background: #000;
@@ -367,12 +363,16 @@ header {
     padding: 20px;
     padding-bottom: 5px;
     border-radius: 15px;
-    margin-top: 40px;
+    margin: 40px 0;
+    position: relative;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; }
+    @media (max-width: 768px) {
+      .project-page .graph-table-container {
+        padding: 20px 0; } }
     .project-page .graph-table-container .bmw-sample-container .graph-header {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 20px; }
+      margin: 4px 4px 20px 4px; }
       @media (max-width: 992px) {
         .project-page .graph-table-container .bmw-sample-container .graph-header {
           flex-direction: column;
@@ -454,3 +454,77 @@ header {
     transform: rotateY(0deg); }
   .project-page .back {
     transform: rotateY(180deg); }
+  .project-page .copy-section {
+    margin: 60px 0; }
+  .project-page .challenge-head, .project-page .solution-head, .project-page .section-head {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px; }
+  .project-page .challenge {
+    background: #ccc;
+    color: #000;
+    padding: 20px 40px;
+    border-radius: 20px;
+    margin: 40px -40px; }
+    .project-page .challenge .solution-head {
+      margin-top: 40px; }
+    .project-page .challenge .graph-table-container {
+      background: white; }
+  .project-page .lesson {
+    margin-bottom: 30px; }
+    .project-page .lesson .lesson-head {
+      text-align: center;
+      font-size: 16px;
+      margin-bottom: 8px; }
+  .project-page .screenshot-container {
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: -20px; }
+    .project-page .screenshot-container .project-image {
+      width: 100%;
+      margin: 10px auto; }
+    .project-page .screenshot-container .caption {
+      font-size: 12px;
+      text-align: center; }
+
+footer {
+  background: #181d27;
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+  footer .footer-content {
+    display: flex;
+    color: white;
+    justify-content: space-between; }
+    footer .footer-content #backToTop {
+      background: transparent;
+      color: white;
+      padding-left: 40px;
+      position: relative;
+      border: solid 1px #fff;
+      border-radius: 5px;
+      transition: .3s; }
+      footer .footer-content #backToTop::after {
+        display: block;
+        content: '\2039';
+        background-size: cover;
+        position: absolute;
+        height: 15px;
+        width: 15px;
+        transform: rotate(90deg);
+        color: white;
+        left: 30px;
+        font-size: 30px;
+        top: 3.5px;
+        transition: .3s; }
+      footer .footer-content #backToTop:hover {
+        background: white;
+        color: black;
+        transition: .3s;
+        border-color: black; }
+        footer .footer-content #backToTop:hover::after {
+          color: black;
+          transition: .3s; }
