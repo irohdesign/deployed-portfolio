@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Jalia Evans</title>
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="container-fluid">
+                <div class="navbar-expand-lg ">
+                  <div class="nav-header">
+                      <div class="site-name"><a href="/">Jalia Evans</a></div>
+                      <button class="collapse-button navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapseContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="burger-line"></span>
+                          <span class="burger-line"></span>
+                          <span class="burger-line"></span>
+                      </button>
+                  </div>
+                  <div class="collapse navbar-collapse" id="navbarCollapseContent">
+                    <nav class="collapsible-nav">
+                        <ul>
+                            <li>
+                                <a href="bmw.html">NIH Work</a>
+                            </li>
+                            <li>
+                                <a href="usvote.html">US Vote Foundation Work</a>
+                            </li>
+                        </ul>
+                        <div class="list-name"><a href="/">Jalia Evans</a></div>
+                        <ul>
+                            <li>
+                                <a href="vac.html">NIAID Work</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About Me</a>
+                            </li>
+                        </ul>
+                    </nav>
+                  </div>
+                </div class="navbar-expand-lg ">
+            </div>
+        </header>
+
+        <main>
+            <div class="project-page-header">
+                <h1 class="page-title">Biomedical Research Workforce Dashboard</h1>
+                <div class="sub-page-title">The National Institutes of Health</div>
+            </div>
+            <div class="container-fluid project-page">
+            <div class="project-section" id="bmw">
+                <p>The Biomedical Research Workforce Dashboard displays data collected from National Institutes of Health employees, their education level, and their ethnicity. We parsed the data from dozens of Institute and Centers (IC) covering thousands of employees over 45 years. Our dashboard was built on Vue.js, with eCharts.js and D3.js as the graphing libraries.</p>
+
+                <div class="graph-table-container">
+                    <div class="flip-container">
+                        <div class="flipper" id="#bmwFlip">
+                            <div class="front">
+                            <div class="bmw-sample-container graph-container">
+                                <div class="graph-header">
+                                    <div class="graph-title">RPG Applicants & Awardees with Funding Rates</div>
+                                    <div class="dropdowns">
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button" id="bmwStartDrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                1998
+                                            </button>
+                                            <div class="dropdown-menu bmw-dropdown-data" id="bmw-start-dropdown-data" aria-labelledby="bmwStartDrop"></div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button" id="bmwEndDrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                2018
+                                            </button>
+                                            <div class="dropdown-menu bmw-dropdown-data" id="bmw-end-dropdown-data" aria-labelledby="bmwEndDrop"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div id="bmw-sample" class="graph-square"></div>
+                            </div>
+                            </div>
+                            <div class="back">
+                                <table class="table bmw-table" id="bmwTable"></table>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn flip-btn" id="bmwFlipper">Flip the graph to see the table</button>
+                </div>
+            </div>
+            </div>
+        </main>
+        
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/echarts.min.js"></script>
+      <script src="data/awardeeFunding.json"></script>
+      <script src="js/main.js"></script>
+      </body>
+</html>

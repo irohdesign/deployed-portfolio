@@ -1,0 +1,128 @@
+﻿[
+    {
+      "fiscalYear": 2018,
+      "applicants": 43262,
+      "awardees": 12082,
+      "fundingRate": 27.93
+    },
+    {
+      "fiscalYear": 2017,
+      "applicants": 42834,
+      "awardees": 11187,
+      "fundingRate": 26.12
+    },
+    {
+      "fiscalYear": 2016,
+      "applicants": 42284,
+      "awardees": 11321,
+      "fundingRate": 26.77
+    },
+    {
+      "fiscalYear": 2015,
+      "applicants": 41865,
+      "awardees": 10680,
+      "fundingRate": "25.51"
+    },
+    {
+      "fiscalYear": 2014,
+      "applicants": 41043,
+      "awardees": 10170,
+      "fundingRate": 24.78
+    },
+    {
+      "fiscalYear": 2013,
+      "applicants": 40293,
+      "awardees": 9063,
+      "fundingRate": 22.49
+    },
+    {
+      "fiscalYear": 2012,
+      "applicants": 41178,
+      "awardees": 9705,
+      "fundingRate": 23.57
+    },
+    {
+      "fiscalYear": 2011,
+      "applicants": 40610,
+      "awardees": 9469,
+      "fundingRate": 23.32
+    },
+    {
+      "fiscalYear": 2010,
+      "applicants": 38259,
+      "awardees": 9914,
+      "fundingRate": 25.91
+    },
+    {
+      "fiscalYear": 2009,
+      "applicants": 35042,
+      "awardees": 9085,
+      "fundingRate": 25.93
+    },
+    {
+      "fiscalYear": 2008,
+      "applicants": 34484,
+      "awardees": 9356,
+      "fundingRate": 27.13
+    },
+    {
+      "fiscalYear": 2007,
+      "applicants": 35056,
+      "awardees": 9477,
+      "fundingRate": 27.03
+    },
+    {
+      "fiscalYear": 2006,
+      "applicants": 34313,
+      "awardees": 8633,
+      "fundingRate": 25.16
+    },
+    {
+      "fiscalYear": 2005,
+      "applicants": 32962,
+      "awardees": 9063,
+      "fundingRate": 27.5
+    },
+    {
+      "fiscalYear": 2004,
+      "applicants": 31406,
+      "awardees": 9397,
+      "fundingRate": 29.92
+    },
+    {
+      "fiscalYear": 2003,
+      "applicants": 27616,
+      "awardees": 9713,
+      "fundingRate": 35.17
+    },
+    {
+      "fiscalYear": 2002,
+      "applicants": 24643,
+      "awardees": 8828,
+      "fundingRate": 35.82
+    },
+    {
+      "fiscalYear": 2001,
+      "applicants": 23415,
+      "awardees": 8615,
+      "fundingRate": 36.79
+    },
+    {
+      "fiscalYear": 2000,
+      "applicants": 22952,
+      "awardees": 8279,
+      "fundingRate": 36.07
+    },
+    {
+      "fiscalYear": 1999,
+      "applicants": 22019,
+      "awardees": 8049,
+      "fundingRate": 36.55
+    },
+    {
+      "fiscalYear": 1998,
+      "applicants": 20436,
+      "awardees": 7182,
+      "fundingRate": 35.14
+    }
+   ]
