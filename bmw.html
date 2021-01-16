@@ -102,12 +102,12 @@
 
                 <section class="copy-section">
                     <div class="section-head">Process</div>
-                    <p>The project scope was very vague, which was challenging. We had to comb through hundreds of thousands of lines of data, organize it, and figure out how to best display it. We used a combination of Excel and Javascript to parse data into objects then rendered graphs to display it. We quickly decided to add filters to the charts because the large datasets made details harder to read.</p>
+                    <p>The project scope was very vague, which was challenging. We had to comb through hundreds of thousands of lines of data, organize it, and figure out how to best display it. We used a combination of Excel and Javascript to parse data into objects, then rendered graphs to display it. We quickly decided to add filters to the charts because the large datasets made details difficult to read.</p>
                     <p>We also included a table on the back of a flip card (you can access this table by clicking the "Flip the graph to see the table" below) for easier reading if the user wanted to get a closer look. It also allows for accessibility, as the table works with screenreaders when the graph cannot. We offer tables with all of our graphs, and I typically build both the graphs and the tables containing the data.</p>
 
                     <div class="challenge">
                         <div class="challenge-head">Challenge: Working with Private Data</div>
-                        <p>We couldn’t display data smaller than 11 people because of privacy concerns. This requirement caused our graphs to have several gaps and was confusing visually to users. The graph would show blank spaces when results were not available but our client wanted a clear indication there was hidden data, not that the graph was not broken. The graphing library's option of connecting missing datapoints (the second option in the graphs below) wasn't acceptable because it looks as if there is data where there isn't any.</p>
+                        <p>We couldn’t display data smaller than 11 people because of privacy concerns. This requirement caused our graphs to have several gaps that were confusing users. The graph would show blank spaces when results were not available, but our client wanted a clear indication there was hidden data. The graphing library's option of connecting missing datapoints (the second option in the graphs below) wasn't acceptable because it looked as if there is data where there isn't any.</p>
                         <div class="solution-head">Solution: Custom Layered Line Graphs</div>
                         <p>I customized the graphs to create dashed lines where there that there was no data present, but that kept the graph from disconnecting unattractively or making the user think it was broken. These graphs show the original visual (With Gaps), the graphing library's solution of connecting empty datapoints (Connected Nulls), and the custom option I offered (My Solution).
                         </p>
@@ -123,21 +123,22 @@
                 <section class="copy-section lessons-learned">
                     <div class="section-head">Lessons Learned</div>
                     <div class="lesson">
+                        <div class="lesson-head">Graphing Libraries</div>
+                        <p>One of the core charts that was on I started the project in my first week at the company. I had to learn my team’s development environment on the fly. Within two weeks, I learned Sass (our CSS preprocessor), Gulp.js (our javascript toolkit and local server launcher) and linting. 
+                        </p>
+                        <p>I learned Vue.js as a frontend framework immediately because I needed to be able to comb through several other developer’s months of work and understand their coding styles and quirks. I needed to learn graphing libraries on quickly and had to heavily customize almost every single graph. I learned how to navigate eCharts.js’ Chinese documentation and D3.js to customize maps to meet client’s wishes</p>
+                        <p>This project was exhausting but it served as a useful crash course in graphing with Javascript.</p>
+                    </div>
+                    <div class="lesson">
                         <div class="lesson-head">Client Experience</div>
-                        <p>Having to disagree with a client and my senior developer was really intimidating as a junior developer. I wanted to keep her and my senior developer happy, so I spent two weeks building the very complex chart, but it didn’t communicate the information properly. It was flashy, but ultimately useless.</p>
+                        <p>The first chart I was assigned had some major problems. It was large and overly complicated, and I knew instantly that it wouldn't display the information well. Learning to disagree was extremely intimidating as a junior developer. I wanted to keep the client and my senior developer happy, so I spent two weeks building the very complex chart and it wasn't a good use of time. It was flashy, but ultimately useless. I met with the client and my senior developer and convinced them to split the graph into multiple views, and we all ultimately agreed it was the right decision.</p>
                         <p>I stood by my position to focus on the usability and function of the site, worked extra hard to add polish to the rest of the graphs, and ultimately made my client happy while still keeping the data readable.</p>
                     </div>
                     <div class="lesson">
-                        <div class="lesson-head">Graphing Libraries</div>
-                        <p>I started the project in my first week at the company. I had to learn my team’s development environment on the fly, learning Sass (our CSS preprocessor), Gulp.js (our javascript toolkit and local server launcher) and linting immediately. 
+                        <div class="lesson-head">Ask Questions When You're Lost</div>
+                        <p>Starting on a project that has been in the works for a year was daunting and confusing. I did pair programming with my lead developer when I got stuck, learned a lot about graphing libraries and watched how the team customized components. I learned that it’s about making the technology work for you and customizing it when you need to.
                         </p>
-                        <p>I learned Vue.js as a frontend framework immediately, having to comb through several other developer’s months of work and understand their coding styles and quirks. I needed to learn graphing libraries on the fly and had to heavily customize almost every single graph. I learned how to navigate eCharts.js’ Chinese documentation and D3.js to customize maps to meet client’s wishes</p>
-                    </div>
-                    <div class="lesson">
-                        <div class="lesson-head">Asks Questions When You're Lost</div>
-                        <p>I did pair programming with my lead developer when I got stuck, learned a lot about graphing libraries and how to customize things. I learned that it’s about making the technology work for you and customizing it when you need to.
-                        </p>
-                        <p>When using graphing library, I saw that there was no documentation for a chart I was assigned to build. I had no idea where to go to find out information because the documentation was written in Chinese, and my senior developer helped me understand how to maneuver within libraries to make the graphs do what I needed them to do.</p>
+                        <p>When using eCharts' graphing library, I saw that there was no documentation for a chart I was assigned to build. I had no idea where to go to find out information because the documentation was written in Chinese, but my senior developer helped me understand how to maneuver within libraries to make the graphs do what I needed them to do.</p>
                     </div>
                 </section>
             </div>
