@@ -579,6 +579,24 @@ header {
           position: absolute; }
         .about-page .about-section ul li a {
           color: #FFC900; }
+    .about-page .about-section .contact-links a {
+      border: solid 1px #FFC900;
+      color: #FFC900;
+      transition: .3s;
+      padding: 4px 10px;
+      margin: 0 8px; }
+      .about-page .about-section .contact-links a:first-child {
+        margin-left: 0; }
+      .about-page .about-section .contact-links a:last-child {
+        margin-right: 0; }
+      .about-page .about-section .contact-links a:hover, .about-page .about-section .contact-links a:focus {
+        background: #FFC900;
+        color: #181d27;
+        transition: .3s; }
+    @media (max-width: 700px) {
+      .about-page .about-section .contact-links {
+        display: flex;
+        flex: auto; } }
 
 footer {
   background: #181d27;
