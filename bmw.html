@@ -49,13 +49,13 @@
         <main>
             <div class="project-page-header">
                 <h1 class="page-title">Biomedical Research Workforce Dashboard</h1>
-                <div class="sub-page-title">The National Institutes of Health</div>
+                <div class="sub-page-title">The National Institutes of Health (NIH)</div>
             </div>
             <div class="container-fluid project-page">
             <div class="project-section" id="bmw">
-                <p>The Biomedical Research Workforce Dashboard displays data collected from National Institutes of Health employees, their education level, and their ethnicity. We parsed the data from dozens of Institute and Centers (IC) covering thousands of employees over 45 years. Our dashboard was built on Vue.js, with eCharts.js and D3.js as the graphing libraries.</p>
+                <p>The Biomedical Research Workforce Dashboard displays data collected from National Institutes of Health employees, their education level, and their ethnicity. We parsed the data from dozens of Institutes and Centers (IC) covering thousands of employees over 45 years. Our dashboard was built on Vue.js with eCharts.js and D3.js as the graphing libraries.</p>
                 <p>My work at The National Institutes of Health is largely internal, so I have included a functional example of the work I did on the project as a substitute for a url.</p>
-                <p>If you'd like to learn more about the Biomedical Research Workforce's mission, visit their <a href="https://biomedicalresearchworkforce.nih.gov/">website</a>.</p>
+                <p>If you'd like to learn more about the Biomedical Research Workforce's mission, visit their <a href="https://biomedicalresearchworkforce.nih.gov/" target="_blank">website</a>.</p>
                 <p><strong>Net eSolutions Project team:</strong> Jalia Evans, Henry Lavoo, Meghan Wlodarczyk, Cuong Tran, Brie Coyle</p>
 
                 <div class="graph-table-container">
@@ -97,26 +97,26 @@
                         Project Goals
                     </div>
                     <p>The National Institutes of Health is the largest biomedical research agency in the world. They ensure the future of American competitiveness in biomedical research and understand the strength in a diverse workforce. My team at Net eSolutions was tasked with organizing 45 years of demographic statistics and displaying them in an easy to read, interactive dashboard. Our work is internal, so I have provided interactive examples on this page.</p>
-                    <p>My role was building an interactive dashboard that displayed gender and racial trends in the employees of both The National Institutes of Health workforce and The American Association of Medical College faculty. I used a combination of <a href="http://echarts.apache.org/en/index.html">eCharts.js</a> and <a href="https://d3js.org/">D3.js</a> to do this.</p>
+                    <p>My role was building an interactive dashboard that displayed gender and racial trends in the employees of both The National Institutes of Health workforce and The American Association of Medical College faculty. I used a combination of <a href="http://echarts.apache.org/en/index.html" target="_blank">eCharts.js</a> and <a href="https://d3js.org/" target="_blank">D3.js</a> to do this.</p>
                 </section>
 
                 <section class="copy-section">
                     <div class="section-head">Process</div>
-                    <p>The project scope was very vague, and we had to comb through hundreds of thousands of lines of data, organize it and figure out how to best display it. We used a combination of Excel and Javascript to parse data into objects, then rendered graphs to display the data. We quickly decided to add filters to the charts because the large datasets made details harder to read.</p>
+                    <p>The project scope was very vague, which was challenging. We had to comb through hundreds of thousands of lines of data, organize it, and figure out how to best display it. We used a combination of Excel and Javascript to parse data into objects then rendered graphs to display it. We quickly decided to add filters to the charts because the large datasets made details harder to read.</p>
                     <p>We also included a table on the back of a flip card (you can access this table by clicking the "Flip the graph to see the table" below) for easier reading if the user wanted to get a closer look. It also allows for accessibility, as the table works with screenreaders when the graph cannot. We offer tables with all of our graphs, and I typically build both the graphs and the tables containing the data.</p>
 
                     <div class="challenge">
                         <div class="challenge-head">Challenge: Working with Private Data</div>
-                        <p>Legally, we couldn’t display data smaller than 11 people because of privacy concerns. Our graphs had several gaps in data, which was confusing visually to users. The graphing libraries would show blank spaces when results were not available, and our client wanted a clear indication there was hidden data, not that the graph was not broken.</p>
+                        <p>We couldn’t display data smaller than 11 people because of privacy concerns. This requirement caused our graphs to have several gaps and was confusing visually to users. The graph would show blank spaces when results were not available but our client wanted a clear indication there was hidden data, not that the graph was not broken. The graphing library's option of connecting missing datapoints (the second option in the graphs below) wasn't acceptable because it looks as if there is data where there isn't any.</p>
                         <div class="solution-head">Solution: Custom Layered Line Graphs</div>
-                        <p>I customized the graphs to create dashed lines where there that there was no data present, but that kept the graph from disconnecting unattractively or making the user think it was broken.
+                        <p>I customized the graphs to create dashed lines where there that there was no data present, but that kept the graph from disconnecting unattractively or making the user think it was broken. These graphs show the original visual (With Gaps), the graphing library's solution of connecting empty datapoints (Connected Nulls), and the custom option I offered (My Solution).
                         </p>
                         <div class="graph-table-container">
                             <div class="line-graph" id="disconnectedLineGraph"></div>
                             <div class="line-graph" id="autoConnectedLineGraph"></div>
                             <div class="line-graph" id="solutionLineGraph"></div>
                         </div>
-                        <p>A gray dashed line is a fairly universal symbol for missing information, so our client was very happy with the customizations I made. I really enjoyed getting to play with eCharts and create my own spin, and now my company uses this technique with all of our line graphs.</p>
+                        <p>A gray dashed line is a fairly universal symbol for missing information, so our client was very happy with the customizations I made. I really enjoyed getting to play with eCharts and create my own spin. My team now uses this technique with all of our line graphs.</p>
                     </div>
                 </section>
 
@@ -134,7 +134,7 @@
                         <p>I learned Vue.js as a frontend framework immediately, having to comb through several other developer’s months of work and understand their coding styles and quirks. I needed to learn graphing libraries on the fly and had to heavily customize almost every single graph. I learned how to navigate eCharts.js’ Chinese documentation and D3.js to customize maps to meet client’s wishes</p>
                     </div>
                     <div class="lesson">
-                        <div class="lesson-head">Asking Questions When You're Lost</div>
+                        <div class="lesson-head">Asks Questions When You're Lost</div>
                         <p>I did pair programming with my lead developer when I got stuck, learned a lot about graphing libraries and how to customize things. I learned that it’s about making the technology work for you and customizing it when you need to.
                         </p>
                         <p>When using graphing library, I saw that there was no documentation for a chart I was assigned to build. I had no idea where to go to find out information because the documentation was written in Chinese, and my senior developer helped me understand how to maneuver within libraries to make the graphs do what I needed them to do.</p>
