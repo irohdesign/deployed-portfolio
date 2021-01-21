@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'menlo';
+  src: url(./../fonts/Menlo-Regular.woff); }
+
 html, body {
   min-height: 100%;
   min-width: 100%;
