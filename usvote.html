@@ -55,16 +55,6 @@
                 <div class="project-section" id="usvote">
                     <p>Voter suppression is a major issue in American elections. The US Vote Foundation develops and provides online tools to assist US citizens living anywhere in the world to register to vote and request their absentee ballot using their state's specific voter forms. The foundation's mission is to simplify the process of registering to vote and help voters stay active in the electoral process. </p>
 
-                    <div class="screenshot-container copy-image">
-                        <img src="images/usvote_api.png" class="project-image" alt="US Vote Home Page">
-                        <div class="caption">The Calculator interface allows volunteers to input a state and election date and returns calculated dates and deadlines for easier data entry</div>
-                    </div>
-                    <section class="copy-section">
-                        <div class="section-head">Custom API and Calculator Interface</div>
-                        <p>The client needed an intuitive tool to calculate the election dates and deadlines in all 50 US states and additional territories. Their current methods were prone to frequent user error, even with experienced and focused volunteers. I used Amazon AWS Amplify, with DynamoDB and GraphQL to build them a custom API that holds their current state election laws. Using that API, I built a calculator for these deadlines so the volunteers could input a state and election date, and the single-page application would output election dates for each individual deadline type (there are typically 10 per state).</p>
-                        <p>It was my first time working with AWS, GraphQL and DynamoDB, but I took on the task of teaching myself because I felt that they were the best fit for the project. The information is translated from Excel spreadsheets to JSON, and the JSON is pushed into the DynamoDB database with React scripts and GraphQL.</p>
-                    </section>
-
                     <p>I have been volunteering in the Civic Data and Election Services Program since March of 2020. I work in the back end, simplifying the Drupal Content Management System interface to help fellow volunteers enter data. I build front-facing pages when there is a short deadline or stubborn issue and act as a consultant to the organization's founder, <a href="https://www.linkedin.com/in/susanovf/" target="_blank">Susan Dzieduszycka-Suinat</a>,  on technical matters. I built them a custom API and interface to calculate election date and deadlines across all 50 states and additional United States territories.</p>
                     
                     <div class="screenshot-container copy-image">
@@ -76,6 +66,16 @@
                         <p>The US Postal Service struggled to get ballots returned in time for the 2020 election. I worked with the US Vote Foundation to build pages that showed voters their state's alternative ballot return options and offered helpful resources.</p>
                         <p>I built the static template for this page, then used the foundation's Drupal site to display the information. I was able to save the foundation money by building the page independent of their paid external developers. When there were elements that I could not access (due to that company having the source code), I would write out the code in Chrome Developer Tools and send it to their team.</p>
                         <p><a href="https://www.usvotefoundation.org/ballot-return-options" target="_blank">Visit the Ballot Return Option page.</a></p>
+                    </section>
+
+                    <div class="screenshot-container copy-image">
+                        <img src="images/usvote_api.png" class="project-image" alt="US Vote Home Page">
+                        <div class="caption">The Calculator interface allows volunteers to input a state and election date and returns calculated dates and deadlines for easier data entry</div>
+                    </div>
+                    <section class="copy-section">
+                        <div class="section-head">Custom API and Calculator Interface</div>
+                        <p>The client needed an intuitive tool to calculate the election dates and deadlines in all 50 US states and additional territories. Their current methods were prone to frequent user error, even with experienced and focused volunteers. I used Amazon AWS Amplify, with DynamoDB and GraphQL to build them a custom API that holds their current state election laws. Using that API, I built a calculator for these deadlines so the volunteers could input a state and election date, and the single-page application would output election dates for each individual deadline type (there are typically 10 per state).</p>
+                        <p>It was my first time working with AWS, GraphQL and DynamoDB, but I took on the task of teaching myself because I felt that they were the best fit for the project. The information is translated from Excel spreadsheets to JSON, and the JSON is pushed into the DynamoDB database with React scripts and GraphQL.</p>
                     </section>
 
                     <div class="screenshot-container copy-image">
