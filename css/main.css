@@ -358,6 +358,7 @@ header {
     text-align: center; }
     .project-page p a {
       font-weight: 900;
+      text-decoration: underline;
       color: #000; }
   .project-page .project-head {
     text-align: center;
