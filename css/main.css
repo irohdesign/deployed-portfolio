@@ -359,7 +359,12 @@ header {
     .project-page p a {
       font-weight: 900;
       text-decoration: underline;
-      color: #000; }
+      color: #000;
+      transition: .3s; }
+      .project-page p a:hover {
+        color: #084887;
+        transition: .3s;
+      }
   .project-page .project-head {
     text-align: center;
     margin: 80px auto 50px auto; }
